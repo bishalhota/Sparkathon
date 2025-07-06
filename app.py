@@ -73,4 +73,6 @@ def home():
     return "Flask XGBoost API is running. POST to /predict with JSON { 'input': [val1, val2, val3, val4] }"
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    import os
+    port = int(os.environ.get("PORT", 5000))  # Render provides PORT
+    app.run(host="0.0.0.0", port=port)
