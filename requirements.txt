@@ -3,3 +3,4 @@ Flask-Cors==3.0.10
 pandas
 numpy
 scikit-learn==1.6.1
+xgboost
